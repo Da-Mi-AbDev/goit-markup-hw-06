@@ -6,11 +6,30 @@ background-color: #FFFFFF;
 
 ul, 
 ol {
-list-style: none;}
+list-style: none;
+}
 
 a {
 text-decoration: none;
 color: initial;}
+
+h1, h2, h3, h4, h5, h6, p {
+margin-top: 0;
+margin-bottom: 0;}
+
+.container {
+max-width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+} 
+
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+
+}
 
 /*h2*/
 .section-title{
@@ -25,3 +44,5 @@ color: #4D5AE5;}
 
 .hero-button {
   background-color: #4D5AE5;}
+
+  
