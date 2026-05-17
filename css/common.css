@@ -54,7 +54,9 @@ text-align: center; }
 color: #4D5AE5;}
 
 .hero-button {
-  background-color: #4D5AE5;}
+background-color: #4D5AE5;
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .social-icon {
 fill: #F4F4FD;
