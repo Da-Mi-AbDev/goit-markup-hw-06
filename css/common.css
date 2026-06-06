@@ -53,7 +53,7 @@ text-align: center; }
 .color-accent {
 color: #4D5AE5;}
 
-.hero-button {
+.hero-button, .submit-button {
 background-color: #4D5AE5;
 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -62,4 +62,6 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 fill: #F4F4FD;
 }
 
-  
+.footer-form-icon {
+fill:#FFFFFF;
+}
