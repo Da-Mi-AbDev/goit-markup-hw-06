@@ -35,7 +35,7 @@
             </ul>
           </address>
            <button class="menu-button" type="button" aria-label="Open menu">
-      <svg class="menu-icon" width="24" height="24">
+      <svg class="open-menu-icon" width="24" height="24">
         <use href="./images/icons.svg#icon-burger-menu"></use>
       </svg>
     </button>
@@ -107,7 +107,8 @@
           <ul class="team-list">
             <li class="team-item">
               <img class="team-item-img" src="../images/team/team-1m.jpg"
-                srcset="../images/team/team-1m@2x.jpg 2x"
+                srcset="../images/team/team-1m.jpg 1x,
+                        ../images/team/team-1m@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260">
@@ -148,6 +149,8 @@
             </li>
             <li class="team-item">
               <img class="team-item-img" src="../images/team/team-2m.jpg"
+                srcset="../images/team/team-2m.jpg 1x,
+                ../images/team/team-2m@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260">
@@ -188,6 +191,8 @@
             </li>
             <li class="team-item">
               <img class="team-item-img" src="../images/team/team-3m.jpg"
+                srcset="./images/team/team-3m.jpg 1x,
+                ../images/team/team-3m@2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260">
@@ -228,6 +233,8 @@
             </li>
             <li class="team-item">
               <img class="team-item-img" src="../images/team/team-4m.jpg"
+                srcset="../images/team/team-4m.jpg 1x,
+                ../images/team/team-4m@2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260">
@@ -510,13 +517,71 @@
 
      <!-- #region Mobile-Menu -->
     <section id="mobile-menu" class="mobile-menu">
+      <div class="menu-mobile is-open">
+         <button class="close-menu" type="button">
+        <svg width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        </button>
+      <nav class="menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-nav-item"><a class="menu-nav-link-aktiv" href="#features">Studio</a></li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#team">Portfolio</a></li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#portfolio">Contacts</a></li>
+            </ul>
+          </nav>
+        <div class="mobile-contacts-media">
+          <address class="menu-contacts">
+              <ul class="menu-contacts-list">
+                 <li class="menu-contacts-item">
+                  <a href="tel:+110001111111" class="menu-contacts-link-aktiv">+11 (000) 111-11-11</a>
+                </li>
+                <li class="menu-contacts-item">
+                  <a href="mailto:info@devstudio.com" class="menu-contacts-link">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+                 <div class="mobile-social-media">
+                <ul class="mobile-social-list">
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+                </ul>
+              </div>
+        </div>
+      </div>    
     </section>
       <!-- #endregion Mobile-Menu -->
 
       <!-- #region modal -->
     <div id="modal" class="back-drop is-open">
      <div class="modal">
-      <button class="close-modal" type="button">
+      <button class="close-menu" type="button">
         <svg width="8" height="8">
         <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -558,10 +623,15 @@
         <input type="checkbox" id="form-checkbox" name="form-checkbox" class="native-checkbox sr-only"/>
       <label for="form-checkbox" class="input-checkboxtext checkbox-label">
         <span class="custom-checkbox">
-          <svg width="10" height="8" class="checkbox-icon">
+          <svg  width="10" height="8" class="checkbox-icon">
           <use href="./images/icons.svg#icon-checkbox" ></use>
-        </svg>
-        </span>I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a></label>
+          </svg>
+        </span>
+        <div class="privacy-text">
+          <span class="checkbox-text">I accept the terms and conditions of the</span>
+          <a href="" class="privacy-link">Privacy Policy</a>
+        </div>
+      </label>
      </div>
      <button type="submit" class="submit-button">Send</button>
      </form>
