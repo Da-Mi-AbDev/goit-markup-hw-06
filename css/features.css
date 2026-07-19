@@ -1,9 +1,8 @@
 .features {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 96px 16px;
 }
-
 
 .features-list-icon {
 display: none;
@@ -11,8 +10,6 @@ justify-content: center;
 align-items: center;
 border: 1px solid #8E8F99;
 border-radius: 4px;
-width: 264px;
-height: 112px;
 background-color: #F4F4FD;
 margin-bottom: 8px;
 }
@@ -43,13 +40,17 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+text-align: left;
+padding-right: 24px;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .features {
-    width: 768px;
+    min-width: 768px;
+  }
+
+  .container {
+max-width: 768px;
   }
 
   .features-list {
@@ -65,18 +66,30 @@ color: #434455;
 .features-item-title {
  text-align: left;
 }
+
+.features-item-text {
+text-align: left;
+padding-right: 0;
+}
 }
 
 @media screen and (min-width: 1158px) {
   .features {
-    width: 1440px;
-    padding: 120px 15px;
+    min-width: 1440px;
+    padding: 120px 141px;
   }
+
+  .container {
+  max-width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  } 
 
   .features-list-icon {
 display: flex;
 justify-content: center;
 align-items: center;
+padding: 24px 100px;
 margin-bottom: 8px;
 }
 
@@ -91,7 +104,7 @@ font-weight: 400;
 }
 
 .features-list {
-  width: 1158px;
+  max-width: 1158px;
   flex-wrap: nowrap;
   gap: 24px;
 }
