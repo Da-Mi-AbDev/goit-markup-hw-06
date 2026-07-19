@@ -1,5 +1,5 @@
 .portfolio {
-  min-width: 320px;
+  width: 100%;
   padding: 96px 16px;
 }
 
@@ -84,12 +84,13 @@ transform: translateY(0);
 
 @media screen and (min-width: 768px) {
   .portfolio {
-  min-width: 768px;
+  width: 100%;
   padding: 96px 0;
   }
 
   .container {
 max-width: 768px;
+padding: 0 16px;
   }
 
   .portfolio-list {
@@ -116,7 +117,7 @@ max-width: 768px;
 
 @media screen and (min-width: 1158px) {
   .portfolio {
-    min-width: 1440px;
+    width: 100%;
     padding: 120px 0;
   }
 
@@ -126,7 +127,6 @@ max-width: 768px;
   }
 
   .portfolio-list {
-min-width: 1158px;
 justify-content: center;
 display: flex;
 flex-wrap: wrap;
@@ -139,10 +139,10 @@ column-gap: 24px;
 }
 
 .portfolio-item-content {
-  width: 360px;
+  width: 100%;
 }
 
 .portfolio-info {
-  width: 360px;
+  width: 100%;
 }  
 }

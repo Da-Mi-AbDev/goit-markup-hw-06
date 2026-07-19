@@ -1,7 +1,12 @@
 .features {
-  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding: 96px 16px;
+  padding: 96px 0;
+}
+
+.container {
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .features-list-icon {
@@ -20,9 +25,7 @@ margin-bottom: 8px;
   row-gap: 72px;
 }
 
-.features-item {
-  flex-basis: calc((100% - 72px) / 4);
-}
+
 
 .features-item-title {
 font-weight: 700;
@@ -40,17 +43,20 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-text-align: left;
-padding-right: 24px;
+text-align: start;
+text-wrap: balance;
 }
 
 @media screen and (min-width: 768px) {
   .features {
-    min-width: 768px;
+  width: 100%;
+  padding: 96px 0;
   }
 
   .container {
 max-width: 768px;
+padding-right: 16px;
+padding-left: 16px;
   }
 
   .features-list {
@@ -75,8 +81,9 @@ padding-right: 0;
 
 @media screen and (min-width: 1158px) {
   .features {
-    min-width: 1440px;
-    padding: 120px 141px;
+    width: 100%;
+    padding: 120px 0;
+    margin: 0 auto;
   }
 
   .container {
@@ -104,7 +111,6 @@ font-weight: 400;
 }
 
 .features-list {
-  max-width: 1158px;
   flex-wrap: nowrap;
   gap: 24px;
 }

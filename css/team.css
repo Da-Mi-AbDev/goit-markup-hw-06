@@ -1,5 +1,5 @@
 .team {
-  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 96px 16px;
   background-color: #F4F4FD;
@@ -82,12 +82,13 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 @media screen and (min-width: 768px) { 
  .team {
-    width: 100%;
-    padding: 96px 0;
+  width: 100%;
+  padding: 96px 0;
  }
 
  .container {
 max-width: 768px;
+padding: 0 16px;
  }
 
  .team-list {
@@ -105,17 +106,16 @@ max-width: 768px;
 
 @media screen and (min-width: 1158px) {
   .team {
-    min-width: 1440px;
-    padding: 120px 15px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 120px 0;
   }
 
   .container {
 max-width: 1158px;
+padding: 0 15px;
  }
 
   .team-list {
-  min-width: 1158px;
   flex-wrap: nowrap;
   gap: 24px;
 }

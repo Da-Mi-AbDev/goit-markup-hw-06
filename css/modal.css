@@ -281,7 +281,7 @@ margin-left: 0;
 
 }
 
-@media screen and (min-width: 1158x) {
+@media screen and (min-width: 1158px) {
 .back-drop {
 padding: 124px 516px;
 }
