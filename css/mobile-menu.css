@@ -9,13 +9,13 @@ transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 background: rgba(255, 255, 255, 1);
 overflow-x: hidden;
 }
-/*
+
 #mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-*/
+
 .menu-mobile {
   position: absolute;
   inset: 0;
