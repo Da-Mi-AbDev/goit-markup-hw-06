@@ -1,7 +1,7 @@
 .team {
   width: 100%;
   margin: 0 auto;
-  padding: 96px 16px;
+  padding: 96px 0;
   background-color: #F4F4FD;
 }
 
@@ -24,7 +24,8 @@
 .team-item {
   background-color: #FFFFFF;
   border-radius: 0 0 4px 4px;
-  min-width: 264px;
+  width: 264px;
+  max-width: 264px;
   box-shadow: 
   0px 2px 1px 0px rgba(46,47,66,0.08), 
   0px 1px 1px 0px rgba(46,47,66,0.16), 
@@ -86,18 +87,14 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
   padding: 96px 0;
  }
 
- .container {
-max-width: 768px;
-padding: 0 16px;
- }
-
  .team-list {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 64px;
-}
+  padding: 0;
+  }
 
 .team-title {
   text-align: center;
@@ -108,15 +105,12 @@ padding: 0 16px;
   .team {
     width: 100%;
     padding: 120px 0;
+    max-width: 1440px;
   }
-
-  .container {
-max-width: 1158px;
-padding: 0 15px;
- }
 
   .team-list {
   flex-wrap: nowrap;
-  gap: 24px;
-}
+  column-gap: 24px;
+  row-gap: 0;
+} 
 }

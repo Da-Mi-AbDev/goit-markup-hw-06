@@ -1,6 +1,6 @@
 .portfolio {
   width: 100%;
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .portfolio-title {
@@ -88,11 +88,6 @@ transform: translateY(0);
   padding: 96px 0;
   }
 
-  .container {
-max-width: 768px;
-padding: 0 16px;
-  }
-
   .portfolio-list {
     flex-direction: row;
     display: flex;
@@ -121,16 +116,12 @@ padding: 0 16px;
     padding: 120px 0;
   }
 
-  .container {
-  max-width: 1158px;
-  padding: 0 15px;
-  }
-
   .portfolio-list {
 justify-content: center;
 display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
+row-gap: 48px;
 }
 
 .portfolio-item {
